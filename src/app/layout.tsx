@@ -12,7 +12,6 @@ const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
 export const metadata: Metadata = {
   title: "ومن الصفر تقدر توصل - دليل عملي لبناء أول موقع لعرض خدمة",
   description: "دليل عربي عملي يساعد المبتدئ على بناء أول موقع لعرض خدمة، وإنشاء عرض تجريبي، والتواصل مع العملاء المحتملين",
-  lang: "ar",
 };
 
 export default function RootLayout({

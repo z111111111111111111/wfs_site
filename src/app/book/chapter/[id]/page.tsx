@@ -21,8 +21,9 @@ const chapters = [
   { id: 14, title: "١٤. لماذا تشتري النسخة الكاملة؟" },
 ];
 
-export default function ChapterPage({ params }: { params: { id: string } }) {
-  const chapterId = parseInt(params.id);
+export default async function ChapterPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const chapterId = parseInt(id);
   const chapter = chapters.find((c) => c.id === chapterId);
   const content = chapterContent[chapterId as keyof typeof chapterContent];
 
